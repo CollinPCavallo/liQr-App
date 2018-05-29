@@ -1,10 +1,18 @@
-.landing-div {
-    margin-top: 5vh;
-}
-body {
-background: url('../img/tumblr_noennileRk1t0qqjbo1_1280.jpg') no-repeat fixed center;
-background-size: cover;
 
+body{
+    background: #08415c;
+    position: relative;
+    
+}
+.ui.button{
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 25px;
+
+}
+.ui.teal.button, .ui.yellow.button {
+    -webkit-box-shadow: inset 0px -25px 42px -24px rgba(0,0,0,0.31);
+    -moz-box-shadow: inset 0px -25px 42px -24px rgba(0,0,0,0.31);
+    box-shadow: inset 0px -25px 42px -24px rgba(0,0,0,0.31);
 }
 label{
     color:white
@@ -44,5 +52,50 @@ label{
     border-bottom: 1px solid grey;
 }
 .header-text{
-    color: whitesmoke
+    font-size:37px;
+    font-family: 'Anton', sans-serif;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    color: rgb(65, 64, 64);
+
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+    width: 55%;
+}
+.ui.grid{
+    background: white;
+    border-radius: 17px;
+    -webkit-box-shadow: inset 0px -43px 42px -24px rgba(0,0,0,0.31);
+    -moz-box-shadow: inset 0px -43px 42px -24px rgba(0,0,0,0.31);
+    box-shadow: inset 0px -43px 42px -24px rgba(0,0,0,0.31);
+}
+div.full.column.center{
+    text-align: center;
+
+}
+@media only screen and (max-device-width: 425px) and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+    width: 75%;
+}  
+    .header-text{
+        font-size: 25px;
+    }
 }
